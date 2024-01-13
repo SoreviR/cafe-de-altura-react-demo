@@ -8,7 +8,9 @@ const ProductCard = ({ productImg, productBrand, productPrice }) => {
         <img src={productImg} alt="" />
       </figure>
       <h5 className="text-sm font-semibold leading-4">{productBrand}</h5>
-      <p className="text-sm font-normal leading-4">{productPrice},00 €</p>
+      <p className="text-sm font-normal leading-4">
+        {productPrice.toFixed(2)} €
+      </p>
 
       <Button
         buttonText="Añadir"
